@@ -11,7 +11,20 @@
   <title>Basic HTML Page</title>
   <link rel="stylesheet" href="styles.css">
   <style>
+    @font-face {
+      font-family: 'CustomFont';
+      src: url('./Roboto/Roboto-Black.ttf') format('truetype');
+      /* Add more src lines for additional font file formats, if available */
+      /* font-family: 'RobotLight';
+      src: url('./Roboto/Roboto-Light.ttf') format('truetype'); */
+    }
+    @font-face {
+      font-family: 'RobotLight';
+      src: url('./Roboto/Roboto-Light.ttf') format('truetype');
+    }
+
     body {
+      font-family: 'CustomFont', Arial, sans-serif;
       margin: 0;
     }
 
@@ -94,6 +107,40 @@
     .nav-icons span {
       font-size: 10px;
     }
+
+    .image-container {
+      position: relative;
+      display: flex;
+      justify-content: center;
+
+    }
+
+    .image-text {
+      position: absolute;
+      top: 35%;
+      left: 25%;
+      transform: translate(-50%, -50%);
+      color: white;
+      padding: 10px;
+    }
+
+    .image-text h1 {
+      font-size: 2.75em;
+    }
+
+    .image-text p {
+      font-size: 1.25em;
+      font-weight: 100;
+      font-family: RobotLight;
+    }
+    .image-text input {
+      padding: 1em;
+      background-color: aquamarine;
+      border-radius: 0.5em;
+      font-size: 1em;
+      font-weight: 200;
+      cursor: pointer;
+    }
   </style>
 </head>
 
@@ -120,6 +167,25 @@
       <li><i class="far fa-user"></i><span href="#"> Login</span></li>
     </ul>
   </nav>
+  <section>
+    <div class="image-container">
+      <img width="85%" src="./assets/MicrosoftTeams-image (4).png" />
+      <div class="image-text">
+        <h1>Explore the new <br> BMW i4 range</h1>
+        <p>From the cool trent and SUV-inspired Active <br>
+          to the sporty ST-Line, the eith generation <br>
+          Fiesta impresses accross the range <br>
+        </p>
+        <input type="submit" value="Book a test drive"  />
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="section-3">
+      <div>Explore new interior</div>
+      <div>Electrifying Performnce</div>
+    </div>
+  </section>
 
   <script src="script.js"></script>
 </body>
