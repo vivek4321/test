@@ -1,15 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/2f1fa596dd.js" crossorigin="anonymous"></script>
+
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <title>Basic HTML Page</title>
   <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      margin: 0;
+    }
+
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #fff;
+    }
+
+    .logo img {
+      height: 70px;
+      margin-left: 15em;
+    }
+
+    .nav-links {
+      display: flex;
+      list-style: none;
+      font-size: 15px;
+      font-weight: 800;
+      word-wrap: break-word;
+    }
+
+    .nav-links li {
+      margin-right: 30px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #000;
+    }
+
+    .nav-links li i {
+      margin-left: 5px;
+    }
+
+    .search-box {
+      display: flex;
+      align-items: center;
+      background-color: #fff;
+      border-radius: 20px;
+      /* padding: 5px 10px; */
+    }
+
+    .search-box {
+      display: flex;
+      align-items: center;
+      background-color: #f0f0f0;
+      padding: 5px 10px;
+      border-radius: 20px;
+    }
+
+    .search-box i {
+      margin-right: 5px;
+    }
+
+    .search-box input[type="text"] {
+      border: none;
+      background-color: transparent;
+      outline: none;
+      padding: 5px;
+      width: 20em;
+    }
+
+    .nav-icons {
+      display: flex;
+      list-style: none;
+      font-size: 1.5em;
+      margin-right: 15em;
+    }
+
+    .nav-icons li {
+      margin-right: 1em;
+    }
+
+    .nav-icons span {
+      text-decoration: none;
+      color: #000;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .nav-icons i {
+      margin-right: 5px;
+    }
+
+    .nav-icons span {
+      font-size: 10px;
+    }
+  </style>
 </head>
+
 <body>
-  <h1>Welcome to My Basic HTML Page</h1>
-  <p>This is a simple HTML page with CSS and JavaScript.</p>
+  <nav class="navbar">
+    <div class="logo">
+      <img src="./assets/logo.png" alt="Logo">
+    </div>
+    <ul class="nav-links">
+      <li><a href="#">New Cars</a> <i class="fa fa-light fa-angle-down"></i></li>
+      <li><a href="#">Used Cars</a><i class="fa fa-light fa-angle-down"></i></li>
+      <li><a href="#">Servicing</a><i class="fa fa-light fa-angle-down"></i></li>
+      <li><a href="#">Commercials</a><i class="fa fa-light fa-angle-down"></i></li>
+      <li><a href="#">Mobility</a></li>
+    </ul>
+    <div class="search-box">
+      <i class="fas fa-search"></i>
+      <input type="text" placeholder='Search: "Make, Model, Location" '>
+      <i class="fa fal fa-microphone"></i>
+    </div>
+    <ul class="nav-icons">
+      <li><i class="fa far fa-map-marker"></i><span href="#">Find Us</span></li>
+      <li><i class="far fa-heart"></i><span href="#"> Save</span></li>
+      <li><i class="far fa-user"></i><span href="#"> Login</span></li>
+    </ul>
+  </nav>
 
   <script src="script.js"></script>
 </body>
+
 </html>
